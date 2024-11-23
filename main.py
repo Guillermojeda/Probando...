@@ -17,10 +17,10 @@ try:
     raiz.iconbitmap("Ball.ico")
 except Exception as e: print(f"Error al cargar el file .ico: {e}")
 
-main_frame = ttk.Frame(raiz)
+main_frame = tk.Frame(raiz, bg="black")
 main_frame.pack(fill="both", expand="true")
 
-label_1 = ttk.Label(main_frame, text="Nombre:")
+label_1 = tk.Label(main_frame, text="Nombre:", background="black", fg="white")
 label_1.grid(row=1, column=1, padx=5, pady=5, sticky=W)
 
 entry_1 = ttk.Entry(main_frame, width=15, font=("Calibri", 11,"bold"))
